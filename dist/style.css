@@ -1,0 +1,98 @@
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(
+		135deg,
+		rgba(59, 103, 158, 1) 0%,
+		rgba(43, 136, 217, 1) 50%,
+		rgba(32, 124, 202, 1) 51%,
+		rgba(125, 185, 232, 1) 100%
+	);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* POSITION */
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+/* INDEX VIEW */
+
+hr {
+	width: 50%;
+	border: 3px solid rgb(31, 29, 179);
+}
+
+.main-box {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 30px;
+	font-size: 1.5em;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-title,
+.main-footer {
+	text-align: center;
+}
+
+/* ERROR VIEW */
+
+.error-box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: rgb(223, 223, 223);
+	font-size: 1.5em;
+}
+
+.btn,
+.btn:focus {
+	font-size: 1.5em;
+	color: rgb(68, 68, 68);
+	border-color: transparent;
+	border-style: none;
+	border-bottom: 4px solid rgb(46, 45, 45);
+	border-left: 3px solid rgb(202, 200, 200);
+	border-radius: 15%;
+	background-color: rgba(174, 188, 191, 1);
+	outline: none;
+	transition: all 0.3s ease 0s;
+	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+	animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+}
+
+.btn:active {
+	border-color: transparent;
+	border-style: none;
+	transition: all 0.3s ease 0s;
+	color: white;
+	outline: none;
+}
+
+/* GENERAL */
+
+.link {
+	text-decoration: none;
+	text-decoration-color: inherit;
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	list-style: none;
+	font-weight: bold;
+}

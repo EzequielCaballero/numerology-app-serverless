@@ -1,0 +1,28 @@
+tr(class="content")
+ td(bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;")
+  table(border="0" cellpadding="0" cellspacing="0" width="100%")
+   tr
+    td(style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;")
+     b #{lang=== 'es' ? "¡Hola" : "Hey"} #{usermail}!👋
+   tr
+    td(style="color: #153643; font-family: Arial, sans-serif; font-size: 18px;padding: 20px 0 0 0;")
+     | #{message}
+   tr
+    td(style="color: #153643; font-family: Arial, sans-serif; font-size: 16px;padding: 20px 0 20px 0;")
+     i #{lang=== 'es' ? "Que tengas un buen día" : "Have a nice day"}
+     | 😃
+   tr
+    td(style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;border-top:3px solid black;padding: 20px 0 20px 0;")
+     h2 #{lang=== 'es' ? "Resultados" : "Results"} 
+     p
+      span
+       b #{lang=== 'es' ? "Nombre completo" : "Fullname"}:
+       |  #{username}
+      br
+      span
+       b #{lang=== 'es' ? "Fecha de nacimiento" : "Birthdate"}: 
+       | #{userbirth}
+   tr
+    td(style="color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;")
+     a(style="border-radius: 4px;display: block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #ffffff !important;background-color: #673ab7;font-family: Arial, sans-serif;" href=url)
+      b #{lang=== 'es' ? "Ver informe" : "View report"}

@@ -1,0 +1,4 @@
+[build]
+    functions = "functions"
+[build.environment]
+    TZ = "America/Argentina/Buenos_Aires"
