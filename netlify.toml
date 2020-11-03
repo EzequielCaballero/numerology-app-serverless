@@ -1,4 +1,4 @@
 [build]
-    functions = "functions"
+    functions = "lambda"
 [build.environment]
     TZ = "America/Argentina/Buenos_Aires"
