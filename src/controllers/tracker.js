@@ -1,5 +1,5 @@
 'use strict';
-const { logSender } = require('../services/logSender');
+const { logSender } = require('../services/tracker/logSender');
 
 exports.tracker = (req, res, next) => {
 	try {

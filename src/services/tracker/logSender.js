@@ -1,8 +1,8 @@
 'use strict';
-const { getLocalDatetime, encodeEmail } = require("../helpers/formatValues");
+const { getLocalDatetime, encodeEmail } = require("../../helpers/formatValues");
 const firebase = require('firebase/app');
 require('firebase/database');
-const { API_TOKEN, FIREBASE_ACCOUNT } = require('../../config/accounts');
+const { API_TOKEN, FIREBASE_ACCOUNT } = require('../../../config/accounts');
 
 if (!firebase.apps.length) firebase.initializeApp(FIREBASE_ACCOUNT);
 const app = firebase.app();

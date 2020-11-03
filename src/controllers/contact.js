@@ -1,5 +1,5 @@
 'use strict';
-const { mailSender } = require('../services/mailSender');
+const { mailSender } = require('../services/contact/mailSender');
 
 exports.contact = (req, res, next) => {
 	try {
