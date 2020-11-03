@@ -12,6 +12,7 @@
 	"author": "EAC",
 	"license": "MIT",
 	"dependencies": {
+		"copy-webpack-plugin": "^6.2.1",
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"firebase": "^7.22.1",
