@@ -1,8 +1,9 @@
 'use strict';
 const pug = require('pug');
-const { TEMPLATES_PATH } = require('../../../config/paths');
+const TEMPLATES_PATH = (process.env.LAMBDA_TASK_ROOT) ? `${process.env.LAMBDA_TASK_ROOT}/templates` : './src/static/templates';
 
 exports.getTemplate = (type, data) => {
+    console.log('Templates path: ' + TEMPLATES_PATH);
     return pug.renderFile(`${TEMPLATES_PATH}/index.pug`, { content: contentSelector(type, data) });
 }
 
