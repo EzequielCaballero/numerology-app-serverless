@@ -16,7 +16,7 @@ exports.logSender = (data, header) => {
 
 			app
 				.database()
-				.ref(`sender-detail/${contactType}/${dateKey.date}/${userKey}`)
+				.ref(`${process.env.NODE_ENV}/sender-detail/${contactType}/${dateKey.date}/${userKey}`)
 				.push({
 					lang: data.lang,
 					from: data.from,
@@ -26,7 +26,7 @@ exports.logSender = (data, header) => {
 					message: data.message
 				})
 				.then(() => {
-					app.database().ref(`contact-list/${userKey}`).child(dateKey.date).push({time: dateKey.time, type: contactType})
+					app.database().ref(`${process.env.NODE_ENV}/contact-list/${userKey}`).child(dateKey.date).push({time: dateKey.time, type: contactType})
 					.then(()=> resolve(`New contact registered.`))
 					.catch((error)=> reject(`Contact not saved: ${error}`));
 				})
