@@ -2,8 +2,8 @@
 const path = require('path');
 const pug = require('pug');
 
-const INDEX_PATH = (process.env.LAMBDA_TASK_ROOT) ? './' : './src/templates';
-const CONTENT_PATH = (process.env.LAMBDA_TASK_ROOT) ? './' : './src/templates/content';
+const INDEX_PATH = (process.env.LAMBDA_TASK_ROOT) ? path.join(process.env.LAMBDA_TASK_ROOT, './src/lambda/api') : './src/templates';
+const CONTENT_PATH = (process.env.LAMBDA_TASK_ROOT) ? path.join(process.env.LAMBDA_TASK_ROOT, './src/lambda/api') : './src/templates/content';
 
 exports.getTemplate = (type, data) => {
     console.log('Templates path: ' + path.resolve(INDEX_PATH, 'index.pug'));
