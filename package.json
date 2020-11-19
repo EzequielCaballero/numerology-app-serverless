@@ -19,6 +19,7 @@
 		"netlify-lambda": "^2.0.1",
 		"nodemailer": "^6.4.13",
 		"pug": "^3.0.0",
+		"pug-loader": "^2.4.0",
 		"serverless-http": "^2.6.0"
 	},
 	"devDependencies": {

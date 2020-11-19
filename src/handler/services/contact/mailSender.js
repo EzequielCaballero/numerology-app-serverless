@@ -1,6 +1,6 @@
 'use strict';
 const nodemailer = require('nodemailer');
-const { API_TOKEN, MAIL_ACCOUNT } = require('../../../config/accounts');
+const { API_TOKEN, MAIL_ACCOUNT } = require('../../../../config/accounts');
 const { getTemplate } = require('./templateSelector');
 
 const transporter = nodemailer.createTransport(MAIL_ACCOUNT);

@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const cors = require('cors');
-const routes = require('./routes');
+const routes = require('./handler/routes');
 const serverless = require('serverless-http');
 
 const app = express();

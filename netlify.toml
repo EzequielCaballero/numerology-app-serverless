@@ -1,4 +1,4 @@
 [build]
-    functions = "lambda"
+    functions = "lambda/api"
 [build.environment]
     TZ = "America/Argentina/Buenos_Aires"

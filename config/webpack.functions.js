@@ -4,10 +4,22 @@ const CopyPlugin = require('copy-webpack-plugin'); //REF: https://community.netl
 
 module.exports = {
 	externals: [ nodeExternals() ],
+	module: {
+		rules: [
+		  { 
+			test: /\.pug$/,
+			use: ['pug-loader']
+		  },
+		]
+	},
 	plugins: [
 		new CopyPlugin({
 		  patterns: [
-			{ from: './static/templates', to: './templates'}
+			{ from: './templates/index.pug'},
+			{ from: './templates/header.pug'},
+			{ from: './templates/footer.pug'},
+			{ from: './templates/content/contact.pug'},
+			{ from: './templates/content/result.pug'}
 		  ],
 		}),
 	],
