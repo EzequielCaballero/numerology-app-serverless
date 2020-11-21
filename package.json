@@ -4,6 +4,7 @@
 	"description": "Serverless function to handle sending emails and track data",
 	"main": "api.js",
 	"scripts": {
+		"prebuild": "cd src/templates && npm install",
 		"build": "./node_modules/.bin/netlify-lambda build --config ./config/webpack.functions.js src",
 		"start": "./node_modules/.bin/netlify-lambda serve --config ./config/webpack.functions.js src",
 		"start:dev": "cross-env NODE_ENV=development ./node_modules/.bin/netlify-lambda serve --config ./config/webpack.functions.js src",
