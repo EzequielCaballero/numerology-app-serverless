@@ -3,7 +3,6 @@ const { logSender } = require('../services/tracker/logSender');
 
 exports.tracker = (req, res, next) => {
 	try {
-		console.info(`POST Tracker -> APIKEY: ${req.headers.token}`);
 		console.info(`POST Tracker -> DATA: ${JSON.stringify(req.body)}`);
 		if (req.headers.token && req.headers["origin-type"]) {
 			logSender(req.body, req.headers)

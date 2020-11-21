@@ -27,10 +27,10 @@ exports.logSender = (data, header) => {
 				})
 				.then(() => {
 					app.database().ref(`${process.env.NODE_ENV}/contact-list/${userKey}`).child(dateKey.date).push({time: dateKey.time, type: contactType})
-					.then(()=> resolve(`New contact registered.`))
-					.catch((error)=> reject(`Contact not saved: ${error}`));
+					.then(()=> resolve(`TRACKER-new contact registered.`))
+					.catch((error)=> reject(`TRACKER-contact not saved: ${error}`));
 				})
-				.catch((error) => reject(`Log not saved: ${error}`));
+				.catch((error) => reject(`TRACKER-log not saved: ${error}`));
 		} else {
 			reject('auth');
 		}

@@ -1,4 +1,5 @@
 [build]
-    functions = "lambda/api"
+    command = "npm run build"
+    functions = "lambda"
 [build.environment]
     TZ = "America/Argentina/Buenos_Aires"

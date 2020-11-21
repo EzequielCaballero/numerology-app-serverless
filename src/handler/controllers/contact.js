@@ -3,7 +3,6 @@ const { mailSender } = require('../services/contact/mailSender');
 
 exports.contact = (req, res, next) => {
 	try {
-		console.info(`POST Send email -> APIKEY: ${req.headers.token}`);
 		console.info(`POST Send email -> DATA: ${JSON.stringify(req.body)}`);
 		if (req.headers.token && req.headers["origin-type"]) {
 			mailSender(req.body, req.headers)
