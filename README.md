@@ -1,6 +1,6 @@
 # DESTINO NUMERICO - _Serverless backend API_
 
-**Serverless API** application hosted by **Netlify** and using **Express** + **Nodemailer** + **Firebase RDB** + **Netlify-lambda** to handle backend requests from main application [**DESTINO NUMERICO**](http://destinonumerico.xyz/).
+**Serverless API** application hosted by **Netlify** and using **Express** + **Nodemailer** + **Firebase RDB** + **Netlify-lambda** to handle backend requests from main application [**DESTINO NUMERICO**](https://destinonumerico.netlify.app/home).
 
 ---
 
